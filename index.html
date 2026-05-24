@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lanchas Maria Eduarda Turismo</title>
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1995/1995528.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+--verde:#0f9d58;
+--amarelo:#ffd54f;
+--fundo:#f4f7f5;
+--texto:#111;
+--card:rgba(255,255,255,0.7);
+}
+@media (prefers-color-scheme: dark){
+:root{
+--fundo:#0f1115;
+--texto:#fff;
+--card:rgba(20,20,20,0.7);
+}
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
+body{background:var(--fundo);color:var(--texto);overflow-x:hidden;}
+header{position:fixed;top:0;width:100%;padding:15px 8%;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(12px);background:rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.1);z-index:1000;}
+.logo{font-size:1.3rem;font-weight:700;color:var(--verde);}
+nav a{margin-left:20px;text-decoration:none;color:var(--texto);font-weight:500;transition:0.3s;}
+nav a:hover{color:var(--verde);}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop');background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;}
+.hero-content h1{font-size:3rem;color:white;margin-bottom:15px;}
+.hero-content p{color:#eee;font-size:1.1rem;max-width:700px;margin:auto;}
+.hero-buttons{margin-top:30px;display:flex;gap:15px;justify-content:center;flex-wrap:wrap;}
+.btn{padding:14px 28px;border:none;border-radius:40px;font-weight:600;cursor:pointer;text-decoration:none;transition:0.3s;}
+.btn-primary{background:var(--verde);color:white;}
+.btn-primary:hover{transform:translateY(-3px);}
+.btn-secondary{background:var(--amarelo);color:#111;}
+section{padding:90px 8%;}
+.section-title{font-size:2rem;margin-bottom:40px;text-align:center;color:var(--verde);}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;}
+.card{background:var(--card);backdrop-filter:blur(10px);padding:25px;border-radius:20px;transition:0.4s;border:1px solid rgba(255,255,255,0.1);}
+.card:hover{transform:translateY(-8px);}
+.card:hover .boat img{transform:scale(1.05);transition:0.4s;}
+.card h3{margin-bottom:10px;color:var(--verde);}
+.card p{font-size:0.95rem;line-height:1.6;}
+.boat{height:220px;border-radius:15px;margin-bottom:15px;overflow:hidden;}
+.boat img{width:100%;height:100%;object-fit:cover;border-radius:15px;display:block;transition:0.4s;}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25d366;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;color:white;text-decoration:none;box-shadow:0 10px 25px rgba(0,0,0,0.3);z-index:999;animation:float 2s infinite ease-in-out;}
+@keyframes float{0%{transform:translateY(0);}50%{transform:translateY(-6px);}100%{transform:translateY(0);}}
+footer{background:#0b0b0b;color:white;padding:40px 8%;text-align:center;}
+.instagram{display:inline-block;margin-top:15px;color:var(--amarelo);text-decoration:none;font-weight:600;}
+@media(max-width:768px){.hero-content h1{font-size:2.2rem;}nav{display:none;}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">🚤 Maria Eduarda Turismo</div>
+<nav>
+<a href="#inicio">Início</a>
+<a href="#lanchas">Lanchas</a>
+<a href="#destinos">Passeios</a>
+<a href="#avaliacoes">Avaliações</a>
+<a href="#contato">Contato</a>
+</nav>
+</header>
+
+<section class="hero" id="inicio">
+<div class="hero-content">
+<h1>Explore as Ilhas de Camamu com conforto e segurança</h1>
+<p>Passeios incríveis pelas ilhas paradisíacas da Baía de Camamu com atendimento premium, lanchas rápidas e experiências inesquecíveis.</p>
+<div class="hero-buttons">
+<a class="btn btn-primary" href="#destinos">Ver Passeios</a>
+<button class="btn btn-secondary" id="reservarBtn">Reservar Agora</button>
+</div>
+</div>
+</section>
+
+<section id="lanchas">
+<h2 class="section-title">Nossa Frota</h2>
+<div class="cards">
+
+<div class="card">
+  <div class="boat">
+     <img src="lancha1.jpg" alt="Lancha Maria Eduarda I">
+  </div>
+  <h3>Maria Eduarda I</h3>
+  <p>Lancha confortável e segura para passeios incríveis pelas ilhas paradisíacas da Baía de Camamu.</p>
+</div>
+
+<div class="card">
+  <div class="boat">
+     <img src="lancha2.jpg" alt="Lancha Maria Eduarda II">
+  </div>
+  <h3>Maria Eduarda II</h3>
+  <p>Magna 26 pés com muito conforto, visual moderno e excelente experiência no mar.</p>
+</div>
+
+<div class="card">
+  <div class="boat">
+     <img src="lancha3.jpg" alt="Lancha Maria Eduarda III">
+  </div>
+  <h3>Maria Eduarda III</h3>
+  <p>Mais espaço, estabilidade e conforto para grupos e passeios inesquecíveis.</p>
+</div>
+
+</div>
+</section>
+
+<section id="destinos">
+<h2 class="section-title">Passeios e Destinos</h2>
+<div class="cards">
+<div class="card">
+<div class="boat" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop');"></div>
+<h3>🏝 Pedra Furada</h3>
+<p>Um dos lugares mais famosos da Baía de Camamu, com águas cristalinas e paisagens paradisíacas.</p>
+</div>
+<div class="card">
+<div class="boat" style="background-image:url('https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=1200&auto=format&fit=crop');"></div>
+<h3>🌴 Ilha do Campinho</h3>
+<p>Praia tranquila cercada pela natureza, perfeita para relaxar e aproveitar o visual incrível.</p>
+</div>
+<div class="card">
+<div class="boat" style="background-image:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200&auto=format&fit=crop');"></div>
+<h3>🌊 Ilha do Goió</h3>
+<p>Águas calmas, areia branca e um cenário perfeito para banho e descanso.</p>
+</div>
+</div>
+</section>
+
+<section id="avaliacoes">
+<h2 class="section-title">Avaliações</h2>
+<div class="cards">
+<div class="card"><p>⭐️⭐️⭐️⭐️⭐️ <br><br>“Passeio maravilhoso, atendimento excelente e lancha super confortável.”</p></div>
+<div class="card"><p>⭐️⭐️⭐️⭐️⭐️ <br><br>“Experiência incrível nas ilhas. Voltaremos com certeza.”</p></div>
+<div class="card"><p>⭐️⭐️⭐️ <br><br>“Tudo muito organizado e seguro.”</p></div>
+</div>
+</section>
+
+<footer id="contato">
+<h2>Lanchas Maria Eduarda Turismo</h2><br>
+<p>📍 Camamu - Bahia</p><br>
+<p>📞 73 98114-3616 <br>📞 73 99928-6507</p>
+<a class="instagram" href="https://instagram.com/passeio_das_ilhas_camamu_ba" target="_blank">Instagram: @passeio_das_ilhas_camamu_ba</a>
+</footer>
+
+<a class="whatsapp" id="whatsappBtn" href="javascript:void(0)">💬</a>
+
+<script>
+const numeros = ["5573981143616","5573999286507"];
+function abrirWhatsApp(){
+const numero = numeros[Math.floor(Math.random()*numeros.length)];
+window.open(`https://wa.me/${numero}?text=Olá! Quero reservar um passeio nas Lanchas Maria Eduarda Turismo 🚤`,'_blank');
+}
+document.getElementById("whatsappBtn").addEventListener("click", abrirWhatsApp);
+document.getElementById("reservarBtn").addEventListener("click", abrirWhatsApp);
+</script>
+</body>
+</html>
